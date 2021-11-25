@@ -35,7 +35,6 @@ class Chart extends PureComponent {
             xScale,
             style,
             animate,
-            animationDuration,
             numberOfTicks,
             contentInset: { top = 0, bottom = 0, left = 0, right = 0 },
             gridMax,
@@ -110,7 +109,6 @@ class Chart extends PureComponent {
                                 {...svg}
                                 d={paths.path}
                                 animate={animate}
-                                animationDuration={animationDuration}
                             />
                             {React.Children.map(children, (child) => {
                                 if (child && !child.props.belowChart) {
@@ -137,7 +135,7 @@ Chart.propTypes = {
     style: PropTypes.any,
 
     animate: PropTypes.bool,
-    animationDuration: PropTypes.number,
+
 
     curve: PropTypes.func,
     contentInset: PropTypes.shape({
