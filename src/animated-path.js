@@ -47,7 +47,7 @@ class AnimatedPath extends Component {
             }
 
             // Get the delta on how far long in our animation we are.
-            const delta = (timestamp - start) / 300
+            const delta = 0
 
             // If we're above 1 then our animation should be complete.
             if (delta > 1) {
@@ -58,8 +58,8 @@ class AnimatedPath extends Component {
                 return
             }
 
-            const d = this.interpolator(delta)
-            this.component.setNativeProps({ d })
+            //const d = this.interpolator(delta)
+            //this.component.setNativeProps({ d })
             // console.log(this.interpolator)
             // this.tween && console.log(this.tween.tween(delta))
             // Tween the SVG path value according to what delta we're currently at.
