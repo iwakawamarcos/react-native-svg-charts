@@ -91,16 +91,12 @@ class AnimatedPath extends Component {
 }
 
 AnimatedPath.propTypes = {
-    animate: PropTypes.bool,
-    animationDuration: PropTypes.number,
-    renderPlaceholder: PropTypes.func,
+    animate: PropTypes.any,
     ...Path.propTypes,
 }
 
 AnimatedPath.defaultProps = {
-    animate: false,
-    animationDuration: 300,
-    renderPlaceholder: () => null,
+    animate: "false", 
 }
 
 export default AnimatedPath
