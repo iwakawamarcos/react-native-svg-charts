@@ -47,7 +47,7 @@ class AnimatedPath extends Component {
             }
 
             // Get the delta on how far long in our animation we are.
-            const delta = (timestamp - start) / this.props.animationDuration
+            const delta = (timestamp - start) / 300
 
             // If we're above 1 then our animation should be complete.
             if (delta > 1) {
